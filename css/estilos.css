@@ -1,0 +1,152 @@
+.banner {
+  width: 100%;
+}
+
+/* Banner top (fondo crema con el texto) */
+.banner-top {
+  background-image: url(https://i.pinimg.com/736x/10/f0/92/10f09227ecdc61a496f38b261289d018.jpg); 
+  background-repeat: repeat-x;
+  background-size: auto 100%; 
+  height: 200px; /* altura de la imagen superior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-top h1 {
+  font-size: 3rem;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Parte inferior (imagen de libros) */
+.banner-bottom {
+  background-image: url(https://i.pinimg.com/1200x/76/7b/22/767b22ea31fb9eea38b23b26c2b4ac71.jpg); /* imagen de los libros */
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  height: 600px; /* altura de la franja de libros */
+}
+
+/* Fondo general */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://i.pinimg.com/736x/10/f0/92/10f09227ecdc61a496f38b261289d018.jpg); /* crema suave */
+  margin: 0;
+  padding: 0;
+}
+
+/* Cada sección */
+section {
+  padding: 40px 20px;
+}
+
+/* Títulos de secciones */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Contenedor de productos en grid */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card de cada producto */
+.producto {
+  background: #fff; /* fondo blanco */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+/* Imágenes todas iguales */
+.producto img {
+  width: 100%;
+  height: 280px; /* fija altura */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Títulos de libros */
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+/* Texto */
+.producto p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Botón */
+.producto button {
+  background: #c89b3c; /* dorado suave */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.producto button:hover {
+  background: #a6782a;
+}
+
+/* Contenedor especial para  Best Selling ebooks */
+.best-sellers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  counter-reset: bestseller; /* Reinicia contador */
+}
+
+/* Cada card */
+.best-sellers .producto {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Numeración automática */
+.best-sellers .producto::before {
+  counter-increment: bestseller; /* suma +1 por card */
+  content: counter(bestseller);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #c89b3c; /* dorado */
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
