@@ -72,6 +72,37 @@ section h2 {
   transform: translateY(-5px);
 }
 
+/* Enlaces como botones */
+a.button {
+  display: inline-block;
+  background: #c89b3c; /* dorado suave */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+a.button:hover {
+  background: #a6782a;
+}
+
+/* Espacio entre los dos botones*/
+a.button + a.button {
+  margin-left: 10px;
+}
+
+/* Opción para diferenciar el botón "Ver más" */
+a.button.ver-detalle {
+  background: #555;
+}
+
+a.button.ver-detalle:hover {
+  background: #333;
+}
+
+
 /* Imágenes todas iguales */
 .producto img {
   width: 100%;
@@ -149,4 +180,140 @@ section h2 {
   justify-content: center;
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+  /* Carrito de compras */
+
+  .carrito {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.resumen-carrito h2 {
+  text-align: left;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Contenedor del producto */
+.producto-carrito {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.producto-carrito img {
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Detalles del libro */
+.detalle-producto {
+  flex: 1;
+}
+
+.detalle-producto h3 {
+  margin: 0;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.detalle-producto p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.detalle-producto .disponible {
+  color: #008a00;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Botones de cantidad y acciones */
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-cantidad {
+  background: none;
+  border: 2px solid #c89b3c;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.1rem;
+  color: #c89b3c;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.btn-cantidad:hover {
+  background: #c89b3c;
+  color: #fff;
+}
+
+.cantidad {
+  font-weight: bold;
+}
+
+.eliminar {
+  color: #0066c0;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.eliminar:hover {
+  text-decoration: underline;
+}
+
+/* Precio a la derecha */
+.precio {
+  min-width: 100px;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+/* Subtotal */
+.subtotal {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.subtotal p {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.subtotal .button {
+  background: #c89b3c;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.subtotal .button:hover {
+  background: #a6782a;
 }
