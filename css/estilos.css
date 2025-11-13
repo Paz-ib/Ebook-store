@@ -9,23 +9,29 @@
   background-size: auto 100%; 
   height: 200px; /* altura de la imagen superior */
   display: flex;
-  justify-content: center;
+  
   align-items: center;
 }
 
 .banner-top h1 {
-  font-size: 3rem;
-  color: #000;
-  font-weight: bold;
-  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 5.0rem;
+  margin-left: 35px;
+  justify-content: left;
+  
+   
 }
+
 
 /* Parte inferior (imagen de libros) */
 .banner-bottom {
   background-image: url(https://i.pinimg.com/1200x/76/7b/22/767b22ea31fb9eea38b23b26c2b4ac71.jpg); /* imagen de los libros */
   background-repeat: repeat-x;
   background-size: auto 100%;
-  height: 600px; /* altura de la franja de libros */
+  height: 550px; /* altura de la franja de libros */
 }
 
 /* Fondo general */
@@ -43,6 +49,9 @@ section {
 
 /* Títulos de secciones */
 section h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: italic;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
