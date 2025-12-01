@@ -2,33 +2,25 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--agrego link a font google icons-->
+
         <!--Este titulo lo veo en el tab de la pagina. No en la url-->
         <title>The Art of Reading Ebook Store</title>
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
+       
         <!-- BANNER TOP Y BANNER BOTTOM (imagenes van en CSS aca tenemos la estructura) -->
         <header class="banner">
             <div class="banner-top">
-                <h1>The Art <br> of Reading</h1>
+                <h1>The Art of Reading</h1>
             </div>
         <div class="banner-bottom"></div>
         </header>
-            
-            <!-- ver despues donde pongo esto <nav> 
-                <ul>
-                    <li><a href="index.html">Best Sellers</a></li>
-                    <li><a href="productos.html">Géneros</a></li>
-                    <li><a href="contacto.html">Autores</a></li>
-                    <li><a href="nosotros.html">Audio Libros</a></li>
-                    <li><a href="carrito.html">Ebooks gratis</a></li>
-                </ul>
-            </nav> -->
-        </header>
 
         <main>
-            <!------- primer sección ------->
+            <!------- best sellers ------->
             <section id="best-sellers"> 
             <h2>Best Selling Ebooks</h2>
             <div class="best-sellers">
@@ -79,173 +71,219 @@
             </div>
             </section>
 
-            <!------- segunda sección ------->
-            <section class="Catálogo">
-            <h2>Géneros</h2>
-            <div class="productos">
+            <!-- ciencia ficcion-->
+             <section id="ciencia-ficción"> 
+            <h2>Ciencia Ficción</h2>
+            <div class="ciencia-ficción">
                 <article class="producto">
-                    <img src="https://i.pinimg.com/736x/aa/28/5a/aa285a5cfc1fbdb3b45bedb518fd7934.jpg" alt="Ciencia Ficción">
-                    <h3>Ciencia Ficción</h3>
-                    <p>Explora mundos imaginarios y relatos fascinantes.</p>
-                    <button>Ver más</button>
-                </article>
+                    <img src="https://i.pinimg.com/1200x/e6/2c/16/e62c1657e43eb8ce7c4ad1232a929a12.jpg" alt="La Felicidad - Gabriel Rolón">
+                    <h3>Fundación</h3>
+                    <p> By Isaac Asimov </p>
+                    <p> $70.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
+                    </article>
+
                 <article class="producto">
-                    <img src="https://i.pinimg.com/736x/c2/3f/e0/c23fe0667762384e0e474db4134a3bfd.jpg" alt="Terror">
-                    <h3>Terror</h3>
-                    <p>Sumérgete en historias que te pondrán los pelos de punta.</p>
-                    <button>Ver más</button>
-                </article>
-                
-               <article class="producto">
-                    <img src="https://i.pinimg.com/736x/13/55/26/13552603da44be7aae983a5f806e78b7.jpg" alt="Clásicos">
-                    <h3>Clásicos</h3>                
-                    <p>Obras maestras que han resistido la prueba del tiempo.</p>
-                    <button>Ver más</button>
-                    
+                    <img src="https://i.pinimg.com/1200x/47/ec/55/47ec55cb4487080ea75a344228297ad2.jpg" alt="1984 - Geroge Orwell|">
+                    <h3>Dune</h3>
+                    <p> By Frank Herbert</p>
+                    <p> $70.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
                 </article>
 
                 <article class="producto">
-                    <img src="https://i.pinimg.com/736x/9d/db/30/9ddb30d71ced3c74037160b016969810.jpg" alt="Policiales">
-                    <h3>Policiales</h3>
-                    <p>Intriga y misterio en cada página.</p>
-                    <button>Ver más</button>
+                    <img src="https://i.pinimg.com/736x/b5/9a/22/b59a22489386b621f2664ba5eff21fa3.jpg" alt="Mujercitas - Louisa May Alcott">
+                    <h3>Farenheit 451</h3>
+                    <p> By Ray Bradbury</p>
+                    <p> $60.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
                 </article>
 
-              
                 <article class="producto">
-                    <img src="https://i.pinimg.com/736x/dc/63/2f/dc632ff748ea1fbbf416b12a9fdb281f.jpg" alt="Romance">
-                    <h3>Romance</h3>
-                    <p>Historias de amor que tocan el corazón</p>
-                    <button>Ver más</button>
+                    <img src="https://i.pinimg.com/1200x/60/b3/c7/60b3c7cec9864f6620293ad4252da2ab.jpg" alt="The Letters of Vincent van Gogh">
+                    <h3>Brave New World</h3>
+                    <p> By Aldous Haxley</p>
+                    <p> $80.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>   
+                </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/35/d9/1e/35d91e4e37d138db9b4e568b27abc8b1.jpg" alt="El arte de amar - Erich Fromm">
+                    <h3>Neuromante</h3>
+                    <p> By William Gibson</p>
+                    <p> $66.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>   
                 </article>
             </div>
             </section>
 
-            <!------- tercera sección ------->
-            <section class="Catálogo">
-            <h2>Autores</h2>
-            <div class="productos">
+            <!--clasicos-->
+            <section id="libros-clasicos"> 
+            <h2>Clásicos</h2>
+            <div class="libros-clasicos">
                 <article class="producto">
-                    <img src="https://i.pinimg.com/1200x/ed/91/1e/ed911e2196c7415907dbdde98841bfc4.jpg" alt="Julio Verne">
-                    <h3>Julio Verne</h3>
-                    <button>Ver más</button>
-                </article>
+                    <img src="https://i.pinimg.com/1200x/e6/2c/16/e62c1657e43eb8ce7c4ad1232a929a12.jpg" alt="La Felicidad - Gabriel Rolón">
+                    <h3>Orgullo y prejuicio</h3>
+                    <p> By Jane Austen</p>
+                    <p> $45.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
+                    </article>
+
                 <article class="producto">
-                    <img src="https://i.pinimg.com/1200x/23/d3/fa/23d3fa3784fc212f24da3efd147c7091.jpg" alt="Julio Cortázar">
-                    <h3>Julio Cortázar</h3>
-                    <button>Ver más</button>
-                </article>
-                
-               <article class="producto">
-                    <img src="https://i.pinimg.com/736x/42/7e/38/427e3830a6952972a5376be74405da63.jpg" alt="Stephen King">
-                    <h3>Stephen King</h3>
-                    <button>Ver más</button>
+                    <img src="https://i.pinimg.com/1200x/47/ec/55/47ec55cb4487080ea75a344228297ad2.jpg" alt="1984 - Geroge Orwell|">
+                    <h3>Odisea</h3>
+                    <p> By Homero</p>
+                    <p> $40.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
                 </article>
 
                 <article class="producto">
-                    <img src="https://i.pinimg.com/736x/f4/3b/1a/f43b1a56202ee4b70a243dfa2318aa10.jpg" alt="J. K. Rowling">
-                    <h3>J. K. Rowling</h3>
-                    <button>Ver más</button>
+                    <img src="https://i.pinimg.com/736x/b5/9a/22/b59a22489386b621f2664ba5eff21fa3.jpg" alt="Mujercitas - Louisa May Alcott">
+                    <h3>Romeo y Julieta</h3>
+                    <p> By William Shakespeare</p>
+                    <p> $60.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
                 </article>
 
                 <article class="producto">
-                    <img src="https://i.pinimg.com/736x/8f/ff/ba/8fffba775ea20e025d254ea980741683.jpg" alt="Stephanie Meyer">
-                    <h3>Stephanie Meyer</h3>
-                     <button>Ver más</button>
+                    <img src="https://i.pinimg.com/1200x/60/b3/c7/60b3c7cec9864f6620293ad4252da2ab.jpg" alt="The Letters of Vincent van Gogh">
+                    <h3>Don Quijote de la Mancha</h3>
+                    <p> Miguel de Cervantes</p>
+                    <p> $40.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>   
                 </article>
 
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/35/d9/1e/35d91e4e37d138db9b4e568b27abc8b1.jpg" alt="El arte de amar - Erich Fromm">
+                    <h3>Moby Dick</h3>
+                    <p>Herman Melville</p>
+                    <p> $60.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>   
+                </article>
             </div>
             </section>
 
-            <!------- cuarta sección ------->
-            <section class="Catálogo">
-            <h2>Audio Libros</h2>
-            <div class="productos">
+
+            <!--Policiales-->
+            <section id="libros-policiales"> 
+            <h2>Policiales</h2>
+            <div class="libros-policiales">
                 <article class="producto">
-                    <img src="https://i.pinimg.com/1200x/22/e6/18/22e6180f1ec041f5213d02d0249fa53b.jpg" alt="Drácula">
+                    <img src="https://i.pinimg.com/1200x/e6/2c/16/e62c1657e43eb8ce7c4ad1232a929a12.jpg" alt="La Felicidad - Gabriel Rolón">
+                    <h3>La Sombra del Viento</h3>
+                    <p> By Carlos Ruíz Safón</p>
+                    <p> $55.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
+                    </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/47/ec/55/47ec55cb4487080ea75a344228297ad2.jpg" alt="1984 - Geroge Orwell|">
+                    <h3>El día que se perdió el amor</h3>
+                    <p> By Javier Castillo</p>
+                    <p> $50.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/736x/b5/9a/22/b59a22489386b621f2664ba5eff21fa3.jpg" alt="Mujercitas - Louisa May Alcott">
+                    <h3>Punto Ciego</h3>
+                    <p> By Paula Hawkins</p>
+                    <p> $60.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/60/b3/c7/60b3c7cec9864f6620293ad4252da2ab.jpg" alt="The Letters of Vincent van Gogh">
+                    <h3>Los casos del comisario Croce</h3>
+                    <p> By Ricardo Piglia</p>
+                    <p> $45.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>   
+                </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/35/d9/1e/35d91e4e37d138db9b4e568b27abc8b1.jpg" alt="El arte de amar - Erich Fromm">
+                    <h3>El caso Alaska Sanders</h3>
+                    <p> By Joel Dicker </p>
+                    <p> $65.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>   
+                </article>
+            </div>
+            </section>
+
+            <!--Terror-->
+            <section id="libros-terror"> 
+            <h2>Terror</h2>
+            <div class="libros-terror">
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/e6/2c/16/e62c1657e43eb8ce7c4ad1232a929a12.jpg" alt="La Felicidad - Gabriel Rolón">
+                    <h3>It</h3>
+                    <p> By Stephen King</p>
+                    <p> $70.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
+                    </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/47/ec/55/47ec55cb4487080ea75a344228297ad2.jpg" alt="1984 - Geroge Orwell|">
+                    <h3>La Maldición de Hill House</h3>
+                    <p> By Shirley Jackson</p>
+                    <p> $80.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/736x/b5/9a/22/b59a22489386b621f2664ba5eff21fa3.jpg" alt="Mujercitas - Louisa May Alcott">
+                    <h3>La mujer de negro</h3>
+                    <p> By Susan Hill</p>
+                    <p> $60.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/60/b3/c7/60b3c7cec9864f6620293ad4252da2ab.jpg" alt="The Letters of Vincent van Gogh">
+                    <h3>El Resplandor</h3>
+                    <p> By Stephen King</p>
+                    <p> $70.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>   
+                </article>
+
+                <article class="producto">
+                    <img src="https://i.pinimg.com/1200x/35/d9/1e/35d91e4e37d138db9b4e568b27abc8b1.jpg" alt="El arte de amar - Erich Fromm">
                     <h3>Drácula</h3>
                     <p> By Bram Stoker</p>
-                    <button>Escuchar ahora</button>
-                </article>
-                <article class="producto">
-                    <img src="https://i.pinimg.com/736x/be/e1/66/bee16683b03c1c402a9be05fa51b6e9a.jpg" alt="Frankenstein">
-                    <h3>Frankenstein</h3>
-                    <p> By Mary Shelley</p>
-                    <button>Escuchar ahora</button>
-                </article>
-                
-               <article class="producto">
-                    <img src="https://i.pinimg.com/736x/61/10/c1/6110c1a84d16e50f788efa8e0b159788.jpg" alt="Sherlock Holmes: Estudio en escarlata">
-                    <h3>Sherlock Holmes: Estudio en escarlata</h3>
-                    <p> By Arthur Conan Doyle</p>
-                    <button>Escuchar ahora</button>
-                </article>
-
-                <article class="producto">
-                    <img src="https://i.pinimg.com/736x/92/64/a4/9264a4efe574d462d6dccc9f7ae8951e.jpg" alt="Orgullo y prejuicio">
-                    <h3>Orgullo y prejuicio</h3>
-                    <p>By Jane Austen</p>
-                    <button>Escuchar ahora</button>
-                </article>
-
-                <article class="producto">
-                    <img src="https://i.pinimg.com/1200x/9a/af/40/9aaf405eac10c9509ccbc0b9c2540777.jpg" alt="La Odisea">
-                    <h3>La Odisea</h3>
-                    <p>By Homero</p>
-                    <button>Escuchar ahora</button>
-                </article>
-
-        
-            </div>
-            </section>
-
-            <!------- quinta sección ------->
-            <section class="Catálogo">
-            <h2>Ebooks gratis</h2>
-            <div class="productos">
-                <article class="producto">
-                    <img src="https://i.pinimg.com/1200x/02/8d/09/028d09b077a663ea8948ba72e0dfc4e6.jpg" alt="Alicia en el país de las maravillas">
-                    <h3>Alicia en el país de las maravillas</h3>
-                    <p> By Lewis Carroll</p>
-                    <button>Leer ahora</button>
-                </article>
-
-                <article class="producto">
-                    <img src="https://i.pinimg.com/1200x/55/ab/a2/55aba265f01b23914f7275c1691f164a.jpg" alt="El retrato de Dorian Gray">
-                    <h3>El retrato de Dorian Gray</h3>
-                    <p> By Oscar Wilde</p>
-                    <button>Leer ahora</button>
-                </article>
-                
-               <article class="producto">
-                    <img src="https://i.pinimg.com/736x/6d/b9/d1/6db9d15d371a287d52aedfd6febf7687.jpg" alt="Moby Dick">
-                    <h3>Moby Dick</h3>
-                    <p>By Herman Melville</p>
-                    <button>Leer ahora</button>
-                </article>
-
-                <article class="producto">
-                    <img src="https://i.pinimg.com/1200x/90/94/4c/90944c1068129be58652a6f7f7e32054.jpg" alt="La metamorfosis">
-                    <h3>La metamorfosis</h3>
-                    <p> By Franz Kafka</p>
-                    <button>Leer ahora</button>
-                </article>
-
-                <article class="producto">
-                    <img src="https://i.pinimg.com/1200x/12/cd/dd/12cddd9aa50569ee0b498b3bc31cc717.jpg" alt="Don Quijote de la Mancha (Parte I)">
-                    <h3>Don Quijote de la Mancha (Parte I)</h3>
-                    <p> By Miguel de Cervantes</p>
-                    <button>Leer ahora</button>
+                    <p> $75.000</p>
+                    <a href="carrito.html" class="button">Añadir al carrito</a>
+                    <a href="product-detail.html" class="button">Ver más</a>   
                 </article>
             </div>
             </section>
+
+            
 
         </main> 
         <footer>
             <p>&copy; 2025 Ebook Store. Todos los derechos reservados.</p>
         </footer>
 
-
+        
     </body>
     <script src="./app.js"></script> <!-- enlace al archivo JavaScript -->
 </html>
