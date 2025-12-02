@@ -13,12 +13,13 @@
   align-items: center;
 }
 
+/* estilo del titulo de la web*/
 .banner-top h1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 50;
   font-style: italic;
-  font-size: 5.0rem;
+  font-size: 4.0rem;
   margin-left: 35px;
   justify-content: left;
   
@@ -31,13 +32,13 @@
   background-image: url(https://i.pinimg.com/1200x/76/7b/22/767b22ea31fb9eea38b23b26c2b4ac71.jpg); /* imagen de los libros */
   background-repeat: repeat-x;
   background-size: auto 100%;
-  height: 550px; /* altura de la franja de libros */
+  height: 600px; /* altura de la franja de libros */
 }
 
 /* Fondo general */
 body {
-  font-family: Arial, sans-serif;
-  background-image: url(https://i.pinimg.com/736x/10/f0/92/10f09227ecdc61a496f38b261289d018.jpg); /* crema suave */
+  font-family: "Poppins", sans-serif; /* fuente general de la web cambiarla poruqe no me gusta*/
+  background-image: url(https://i.pinimg.com/736x/10/f0/92/10f09227ecdc61a496f38b261289d018.jpg); /* fondo crema liso */
   margin: 0;
   padding: 0;
 }
@@ -150,6 +151,8 @@ a.button.ver-detalle:hover {
   background: #a6782a;
 }
 
+/* LIBROS BEST SELLERS*/
+
 /* Contenedor especial para  Best Selling ebooks */
 .best-sellers {
   display: grid;
@@ -171,25 +174,95 @@ a.button.ver-detalle:hover {
   transition: transform 0.2s ease-in-out;
 }
 
-/* Numeración automática */
-.best-sellers .producto::before {
-  counter-increment: bestseller; /* suma +1 por card */
-  content: counter(bestseller);
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #c89b3c; /* dorado */
-  color: #fff;
-  font-weight: bold;
-  font-size: 1rem;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+/* CIENCIA FICCION LIBROS*/
+/* Contenedor especial para  Ciencia Ficción */
+.ciencia-ficción {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  counter-reset: bestseller; /* Reinicia contador */
 }
+
+/* Cada card */
+.ciencia-ficción .producto {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* CLASICOS LIBROS*/
+
+/* Contenedor especial para  Best Selling ebooks */
+.libros-clasicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  counter-reset: bestseller; /* Reinicia contador */
+}
+
+/* Cada card */
+.libros-clasicos .producto {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+/*POLICIALES LIBROS*/
+.libros-policiales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  counter-reset: bestseller; /* Reinicia contador */
+}
+
+/* Cada card */
+.libros-policiales .producto {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/*TERROR LIBROS*/
+.libros-terror{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  counter-reset: bestseller; /* Reinicia contador */
+}
+
+/* Cada card */
+.libros-terror .producto {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+
 
 
   /* Carrito de compras */
@@ -326,3 +399,4 @@ a.button.ver-detalle:hover {
 .subtotal .button:hover {
   background: #a6782a;
 }
+
